@@ -1,0 +1,15 @@
+.filtro-container .filtro {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #2f3640;
+    color: #60666b;
+}
+
+.filtro-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
