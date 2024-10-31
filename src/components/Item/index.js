@@ -2,8 +2,10 @@ import './style.css'
 
 const Item = (props) => {
     return (
-        <div className="item">
-            
+        <div className="pokeball-card">
+            <div className='content'>
+
+            </div>
         </div>
     )
 }

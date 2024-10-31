@@ -1,14 +1,28 @@
-.item {
+.pokeball-card {
     width: 250px;
     height: 300px;
     border: 2px solid black;
     border-radius: 15px;
-    background: linear-gradient(to bottom, #FF0000 50%, #FFFFFF 50%);
     position: relative;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.item::before {
+/* Fundo da Pokébola com blur */
+.pokeball-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #FF0000 50%, #FFFFFF 50%);
+    filter: blur(2px);
+    /* Aplica o desfoque */
+}
+
+/* Linha divisória no meio com blur */
+.pokeball-card::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -17,9 +31,12 @@
     height: 10px;
     background-color: #000;
     transform: translateY(-50%);
+    filter: blur(2px);
+    /* Aplica o desfoque */
 }
 
-.item::after {
+/* Círculo central com blur */
+.pokeball-card .content::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -29,5 +46,16 @@
     background-color: #FFFFFF;
     border: 10px solid #000;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 110%);
+    filter: blur(2px);
+    /* Aplica o desfoque */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
