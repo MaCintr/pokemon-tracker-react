@@ -1,0 +1,8 @@
+.item {
+    border: none;
+    border-radius: 40px;
+    width: 250px;
+    height: 300px;
+    background-color: #1a2f51;
+    box-shadow: 7px 7px 15px black;
+}

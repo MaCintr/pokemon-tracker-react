@@ -1,6 +1,7 @@
 import './App.css';
 import Filter from './components/Filter';
 import Header from './components/Header';
+import Item from './components/Item';
 import SearchBar from './components/SearchBar';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Filter title='Type'/>
       <Filter title='Generation'/>
       </div>
+      <Item />
     </div>
   );
 }

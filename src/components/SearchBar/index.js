@@ -5,7 +5,7 @@ const SearchBar = () => {
         /* From Uiverse.io by OnlyCodeChannel */
         <div class="searchBox">
 
-            <input class="searchInput" type="text" name="" placeholder="Search for a Pokémon..." />
+            <input class="searchInput" type="text" name="" placeholder="Search by name..." />
             <button class="searchButton" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                     <g clip-path="url(#clip0_2_17)">
