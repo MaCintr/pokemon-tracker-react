@@ -8,7 +8,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Fundo da Pokébola com blur */
 .pokeball-card::before {
     content: '';
     position: absolute;
@@ -18,10 +17,8 @@
     height: 100%;
     background: linear-gradient(to bottom, #FF0000 50%, #FFFFFF 50%);
     filter: blur(2px);
-    /* Aplica o desfoque */
 }
 
-/* Linha divisória no meio com blur */
 .pokeball-card::after {
     content: '';
     position: absolute;
@@ -32,13 +29,11 @@
     background-color: #000;
     transform: translateY(-50%);
     filter: blur(2px);
-    /* Aplica o desfoque */
 }
 
-/* Círculo central com blur */
 .pokeball-card .content::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 60px;
@@ -46,9 +41,8 @@
     background-color: #FFFFFF;
     border: 10px solid #000;
     border-radius: 50%;
-    transform: translate(-50%, 110%);
+    transform: translate(-50%, 320%);
     filter: blur(2px);
-    /* Aplica o desfoque */
 }
 
 .content {
@@ -58,4 +52,10 @@
     padding: 20px;
     color: #333;
     font-family: Arial, sans-serif;
+}
+
+.content .title {
+    font-weight: 800;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
